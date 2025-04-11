@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Site de Música</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #1e1e2f;
+      color: #fff;
+    }
+
+    header {
+      background-color: #121222;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .content {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #2a2a40;
+      padding: 20px;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #121222;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🎵 Meu Site de Música
+  </header>
+
+  <div class="content">
+    <div class="card">
+      <h3>Lo-fi Chill</h3>
+      <p>Música relaxante para estudar ou trabalhar.</p>
+      <audio controls>
+        <source src="musica1.mp3" type="audio/mp3">
+        Seu navegador não suporta áudio.
+      </audio>
+    </div>
+
+    <div class="card">
+      <h3>Rock Clássico</h3>
+      <p>Grandes sucessos do rock dos anos 80 e 90.</p>
+      <audio controls>
+        <source src="musica2.mp3" type="audio/mp3">
+        Seu navegador não suporta áudio.
+      </audio>
+    </div>
+
+    <div class="card">
+      <h3>Pop Atual</h3>
+      <p>Os hits mais tocados do momento.</p>
+      <audio controls>
+        <source src="musica3.mp3" type="audio/mp3">
+        Seu navegador não suporta áudio.
+      </audio>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 - Meu Site de Música
+  </footer>
+</body>
+</html>
